@@ -8,7 +8,7 @@ namespace Calculator.Test.Unit
     [TestFixture]
     public class CalculatorUnitTests
     {
-        private Calculator _uut;   // FFF
+        private Calculator _uut;
 
         [SetUp]
         public void Setup()
