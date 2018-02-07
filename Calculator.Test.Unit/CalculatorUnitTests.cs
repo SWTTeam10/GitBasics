@@ -21,13 +21,10 @@ namespace Calculator.Test.Unit
         [TestCase(-3, 2, -1)]
         [TestCase(3, -2, 1)]
         [TestCase(3, 0, 3)]
-        [TestCase(4, 0, 4)]
-        [TestCase(5,0,5)] 
         public void Add_AddPosAndNegNumbers_ResultIsCorrect(int a, int b, int result)
         {
             Assert.That(_uut.Add(a, b), Is.EqualTo(result));
         }
-
 
         [TestCase(3, 2, 1)]
         [TestCase(-3, -2, -1)]
@@ -37,7 +34,6 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Subtract(a, b), Is.EqualTo(result));
         }
-
 
         [TestCase(3, 2, 6)]
         [TestCase(-3, -2, 6)]
@@ -50,7 +46,6 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Multiply(a, b), Is.EqualTo(result));
         }
-
 
         [TestCase(2, 3, 8)]
         [TestCase(2, -3, 0.125)]
