@@ -25,5 +25,17 @@ namespace Calculator
         {
             return Math.Pow(a, b);
         }
+
+        public double Divide(double a, double b)
+        {
+            if (b == 0)
+            {
+                throw new Exception("Der kan ikke divideres med 0"); 
+            }
+            else
+            {
+                return a / b;
+            }
+        }
     }
 }
