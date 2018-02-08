@@ -4,6 +4,8 @@ namespace Calculator
 {
     public class Calculator
     {
+        public double Accumulator { get; private set; }
+    
         public double Add(double a, double b)
         {
             return a + b;
