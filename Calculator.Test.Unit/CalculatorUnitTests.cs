@@ -68,13 +68,13 @@ namespace Calculator.Test.Unit
         {
             Assert.That(_uut.Divide(a, b), Is.EqualTo(result));
         }
-      
-        //[Test]
-        //public void Divide_DivideWithZero_ExceptionThrown()
-        //{
-            
-        //    Assert.That(_uut.Divide(3, 0), Throws.TypeOf());
-        //}
+
+        [Test]
+        public void Divide_DivideWithZero_ExceptionThrown()
+        {
+
+            Assert.Throws<Exception>( () => _uut.Divide(3, 0));
+        }
 
     }
 }
