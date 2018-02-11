@@ -76,5 +76,20 @@ namespace Calculator.Test.Unit
             Assert.Throws<Exception>( () => _uut.Divide(3, 0));
         }
 
+        //Test af accumulator
+        [Test]
+        public void Accumulator_Add_SetsLatestValue()
+        {
+            _uut.Add(2,3);
+            Assert.AreEqual(_uut.Accumulator,5 );
+        }
+
+        [Test]
+        public void Clear_ClearAccumulator_AccumulatorIsZero()
+        {
+            _uut.Clear();
+            Assert.AreEqual(_uut.Accumulator, 0);
+        }
+
     }
 }
